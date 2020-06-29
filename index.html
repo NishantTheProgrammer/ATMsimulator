@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ATM Simulator</title>
+</head>
+<body>
+    <div class="machine">
+        <div class="camera"></div>
+        <div class="main">
+            <div class="leftButtonPanel">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="screen"></div>
+            <div class="rightButtonPanel">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+        <div class="operatorPanel">
+            <div class="recipt">
+                <div class="upperArc"></div>
+            </div>
+            <div class="numpadArea">
+                <div class="numpad">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button style="background-color: yellow; font-size: 0.6rem;">Clear</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button style="background-color: red; font-size: 0.6rem;">Cancel</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button style="background-color: green; font-size: 0.6rem;">Enter</button>
+                    
+                    <button></button>
+                    <button>0</button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            <div class="cardAccepter">
+                <div class="fingerSpace">
+                    <div class="cardReader"></div>
+                </div>
+                <input type="file" accept=".txt" class="cardFile">
+
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="cashCollector">
+            <div class="shutter">
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: gray;
+}
+
+.machine
+{
+    background-color: rgb(49, 48, 44);
+    height: 700px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 2px rgb(63, 56, 56);
+}
+
+.camera
+{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.main
+{
+    height: 35%;
+    width: 88%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 3px #0e0e0e, inset -10px -10px 3px #424242;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    padding: 4% 3%;
+}
+.screen
+{
+    background-color: blue;
+    background-size: cover;
+    border: 2px inset rgb(60, 60, 60);
+}
+.leftButtonPanel, .rightButtonPanel
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.leftButtonPanel button, .rightButtonPanel button
+{
+    border: 2px outset #656565;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+button:active
+{
+    border-style: inset;
+}
+
+.operatorPanel
+{
+    height: 20%;
+    width: 88%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr;
+}
+.recipt
+{
+    height: 15%;
+    width: 45%;
+    justify-self: center;
+    align-self: flex-end;
+    background-image: linear-gradient(rgb(60, 60, 60), rgb(84, 84, 84));
+    border-radius: 5px;
+    border:inset black 2px;
+    border-top-style: none;
+    margin-bottom: 20%;
+}
+.recipt .upperArc
+{
+    height: 80%;
+    width: 40%;
+    background-image: linear-gradient(rgb(60, 60, 60), rgb(84, 84, 84));
+    border-radius: 5px;
+    border: 2px black;
+    border-right-style: inset;
+    border-left-style: inset;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.numpadArea
+{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(49, 48, 44), rgb(30, 30, 30));
+}
+
+.numpad
+{
+    background-color: rgb(16, 16, 16);
+    height: 110px;
+    width: 87%;
+    margin: 20px auto;
+    transform: translateY(25%) perspective(400px) rotateX(45deg);
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-gap: 2px
+}
+.numpad button
+{
+    height: 15px;
+    border-radius: 50px;
+    font-family: Consolas;
+    font-weight: bold;
+    background-color: wheat;
+    border: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.cardAccepter
+{
+    background-color: rgba(5, 102, 5, 0.72);
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    border: 2px ridge green;
+    justify-self: center;
+    align-self: center;
+}
+
+.cardFile
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-65%);
+    border-radius: 50%;
+    outline: none;
+    opacity: 0;
+}
+
+.fingerSpace
+{
+    height: 40px;
+    width: 15px;
+    position: relative;
+    background-color: rgb(9, 63, 9);
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+
+}
+.cardReader
+{
+    position: relative;
+    height: 1.5px;
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    top: 65%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(41, 37, 37);
+}
+
+.divider
+{
+    height: 10px;
+    box-shadow: inset -20px -20px 10px #424242;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+.cashCollector
+{
+    border: 1px solid black;
+    height: 20px;
+    width: 200px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.shutter
+{
+    height: 100%;
+    background-color: silver;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    color: white;
+    transition: transform 300ms ease-in-out;
+}
+
+.cashCollector:hover .shutter
+{
+    position: relative;
+    transform: translateY(-90%);
+}
